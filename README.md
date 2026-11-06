@@ -1,7 +1,8 @@
 # Losia website
 
 The website of Losia, a skincare routine and product shelf app for Android:
-https://kaanbulut22.github.io/losia-site/
+https://losiaapp.github.io/ (repository `losiaapp/losiaapp.github.io`; the old address
+kaanbulut22.github.io/losia-site/ redirects here)
 
 Plain HTML, CSS and JavaScript, served by GitHub Pages. No build step, no
 trackers; the fonts (Fraunces, Instrument Sans) are self-hosted.

@@ -2,7 +2,7 @@
 
 **Kullanıcıya HER ZAMAN Türkçe yaz:** ara bilgilendirmeler, açıklamalar, son mesajlar dahil. (Kod, dosya adları ve commit mesajları İngilizce kalır.)
 
-Site: https://kaanbulut22.github.io/losia-site/ (GitHub Pages, `kaanbulut22/losia-site`). Düz HTML/CSS/JS; build adımı, izleyici, dış yazı tipi yok. Ayrıntılar: [README.md](README.md).
+Site: https://losiaapp.github.io/ (GitHub Pages, `losiaapp/losiaapp.github.io`; 2026-11-06'da `kaanbulut22/losia-site`'tan taşındı, eski depo yalnızca yönlendirir). Düz HTML/CSS/JS; build adımı, izleyici, dış yazı tipi yok. Ayrıntılar: [README.md](README.md).
 
 ## Losia projeleri (birbirine bağlı)
 Losia üç klasörde, üç ayrı Claude oturumunda yürüyor. Amaç: kullanıcı aynı soruya iki kez cevap vermesin.
@@ -10,7 +10,7 @@ Losia üç klasörde, üç ayrı Claude oturumunda yürüyor. Amaç: kullanıcı
 | Klasör | Ne | Oturum adı (ListAgents'te) | Durum |
 |---|---|---|---|
 | `D:\losia` | Uygulama (Expo) | `losia-…` | `PROGRESS.md` |
-| `D:\losia-site` | Web sitesi (GitHub Pages, `kaanbulut22/losia-site`) | `losia-site-…` | `CLAUDE.md`, `README.md`, git geçmişi |
+| `D:\losia-site` | Web sitesi (GitHub Pages, `losiaapp/losiaapp.github.io`) | `losia-site-…` | `CLAUDE.md`, `README.md`, git geçmişi |
 | `D:\losia-sosyal` | Sosyal medya: hesaplar, kapaklar, gönderiler (`kaanbulut22/losia-sosyal`, gizli) | `losia-sosyal-…` | `PROGRESS.md`, `takvim.md` |
 
 - **Sormadan önce bak:** Kullanıcıya bir şey sormadan önce diğer iki klasörün `CLAUDE.md` ve `PROGRESS.md`'sine bak (yalnızca okuyarak). Cevap oradaysa sorma, oradaki kararı kullan.
@@ -28,7 +28,7 @@ Losia bir **güzellik/yaşam tarzı** uygulamasıdır; sağlık/tıbbi uygulama 
 ## Site kuralları
 - **TR ve EN sayfalar senkron:** `index.html` ↔ `en/index.html`, `gizlilik/` ↔ `en/privacy/`. Birinde yapılan metin, bölüm, görsel değişikliği diğerine de yapılır. Ekran görüntüleri `assets/screens/tr-*.webp` ve `en-*.webp` çiftleri olarak aynı ekranı göstermeli.
 - **Gizlilik politikası** `D:\losia\docs\privacy-policy.md` ile aynı metindir. Orada değişirse burada da güncellenir (uygulama oturumundan haber gelir); burada kendiliğinden farklı bir şey yazılmaz.
-- **Gizlilik adresleri kalıcı:** `/losia-site/gizlilik/` ve `/losia-site/en/privacy/` uygulamadan ve Play Console'dan bağlanıyor; yolları değiştirme. Politika yalnızca iki yerde tutulur: `D:\losia\docs\privacy-policy.md` ve sitedeki bu iki sayfa. Eski `losia-privacy` deposu yalnızca buraya yönlendirir, güncellenmez.
+- **Gizlilik adresleri kalıcı:** `/gizlilik/` ve `/en/privacy/` uygulamadan ve Play Console'dan bağlanıyor; yolları değiştirme. Eski adresler (`kaanbulut22.github.io/losia-site/...`) `kaanbulut22/losia-site` deposundaki yönlendirme sayfalarıyla buraya gelir; o depoyu silme. Politika yalnızca iki yerde tutulur: `D:\losia\docs\privacy-policy.md` ve sitedeki bu iki sayfa. Eski `losia-privacy` deposu yalnızca buraya yönlendirir, güncellenmez.
 - **Search Console etiketi kalıcı:** `index.html` ve `en/index.html`'deki `google-site-verification` meta etiketi Play Console'daki geliştirici web sitesi doğrulamasını sağlıyor; silme.
 - Ekran görüntüleri telefondan alınır (uygulamanın örnek yedeği, `D:\losia\store\screenshots\make-sample-backup.mjs`), 720×1600 webp'ye çevrilir. Kaynak kopyalar `D:\losia-sosyal\kaynaklar\ekranlar\`'da da durur.
 - Yerel önizleme için klasörü sunucuyla aç (`python -m http.server 8765`); dosyayı doğrudan açınca klasör bağlantıları (`en/`, `gizlilik/`) ve yazı tipleri çalışmaz.
