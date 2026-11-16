@@ -231,7 +231,7 @@ a {
   margin-top: 34px;
 }
 
-.soon {
+.play {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -241,15 +241,22 @@ a {
   color: var(--paper);
   font-size: 15px;
   line-height: 1.2;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
 }
 
-.soon svg {
+.play:hover {
+  background: var(--rose);
+  transform: translateY(-1px);
+}
+
+.play svg {
   width: 22px;
   height: 22px;
   flex: none;
 }
 
-.soon small {
+.play small {
   display: block;
   font-size: 11px;
   letter-spacing: 0.12em;
@@ -1046,8 +1053,11 @@ figcaption i {
   border-bottom: 1px solid var(--ink);
 }
 
-.footer-top .closing {
+.footer-lead {
   grid-column: 1 / span 6;
+}
+
+.footer-top .closing {
   margin: 0;
   font-family: var(--serif);
   font-weight: 350;
@@ -1058,6 +1068,50 @@ figcaption i {
 
 .footer-top .closing em {
   color: var(--rose);
+}
+
+.app-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+  padding: 10px 22px 10px 10px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fffaf6;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1.25;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.app-card:hover {
+  border-color: var(--rose);
+  transform: translateY(-1px);
+}
+
+.app-card img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+}
+
+.app-card b {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.app-card small {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.app-card .go {
+  margin-left: 8px;
+  color: var(--rose);
+  font-size: 20px;
 }
 
 .footer-cols {
@@ -1257,7 +1311,7 @@ figcaption i {
   .pair-intro,
   .privacy-grid h2,
   .privacy-grid .side,
-  .footer-top .closing,
+  .footer-lead,
   .footer-cols {
     grid-column: 1 / -1;
   }
