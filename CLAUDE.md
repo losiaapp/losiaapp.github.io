@@ -33,6 +33,7 @@ Losia bir **güzellik/yaşam tarzı** uygulamasıdır; sağlık/tıbbi uygulama 
 - **Search Console etiketi kalıcı:** `index.html` ve `en/index.html`'deki `google-site-verification` meta etiketi Play Console'daki geliştirici web sitesi doğrulamasını sağlıyor; silme.
 - Ekran görüntüleri telefondan alınır (uygulamanın örnek yedeği, `D:\losia\store\screenshots\make-sample-backup.mjs`), 720×1600 webp'ye çevrilir. Kaynak kopyalar `D:\losia-sosyal\kaynaklar\ekranlar\`'da da durur.
 - Yerel önizleme için klasörü sunucuyla aç (`python -m http.server 8765`); dosyayı doğrudan açınca klasör bağlantıları (`en/`, `gizlilik/`) ve yazı tipleri çalışmaz.
+- **Önbellek:** `assets/style.css` ya da simge dosyaları değişince dört sayfadaki (`index.html`, `en/index.html`, `gizlilik/`, `en/privacy/`) `?v=YYYYMMDD` etiketini o günün tarihiyle güncelle; yoksa eski ziyaretçiler eski CSS ile bozuk sayfa görür (2026-11-16'da yerelde yaşandı).
 - Paylaşım görselleri `_tools/og.html`'den headless tarayıcıyla 1200×630 üretilir. `_` ile başlayan klasörler yayınlanmaz.
 - Sosyal medya kapakları ve şablonu bu depoda değil, `D:\losia-sosyal`'da (`sablonlar/kapak.html`); o işleri sosyal oturumu yapar.
 - Yeni tasarımda önce 2–3 seçenek ve önizleme göster, onay al. Animasyonları headless tarayıcı doğrulayamaz; kullanıcıdan gerçek tarayıcıda bakmasını iste.
